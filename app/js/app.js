@@ -53,6 +53,7 @@ app.controller('NavbarController', ['$scope', '$location', '$translate', functio
         }
     }
     
+    //http://stackoverflow.com/questions/901115/how-can-i-get-query-string-values-in-javascript
     $scope.getParameterByName = function(name, url){
         if (!url) url = window.location.href;
         name = name.replace(/[\[\]]/g, "\\$&");
